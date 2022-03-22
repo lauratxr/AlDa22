@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LibraryStd" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UnionFind" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iwas" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/exercise01" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
