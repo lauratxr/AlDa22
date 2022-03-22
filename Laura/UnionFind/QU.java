@@ -15,7 +15,9 @@ public class QU {
     }
 
     public int find(int p){
-        while(p != id[p]) p = id[p];
+        while(p != id[p]){
+            p = id[p];
+        }
         return p;
     }
 
@@ -23,8 +25,14 @@ public class QU {
         int pRoot = find(p);
         int qRoot = find(q);
 
-        if (pRoot == qRoot) return;
+        if (pRoot == qRoot){
+            return;
+        }
 
         id[pRoot] = qRoot;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
