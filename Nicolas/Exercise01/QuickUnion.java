@@ -1,21 +1,22 @@
-public class QU {
+package Exercise01;
 
-    private int[] id;
+public class QuickUnion {
 
-    public QU(int N){
+    private int [] id;
+
+    public QuickUnion(int N){
         id = new int[N];
-
         for (int i = 0; i < N; i++) {
             id[i] = i;
         }
     }
 
     public boolean connected(int p, int q){
-        return find(p) == find(q);
+        return find(p)==find(q);
     }
 
     public int find(int p){
-        while(p != id[p]) p = id[p];
+        while (p != id[p])p = id[p];
         return p;
     }
 
@@ -23,8 +24,11 @@ public class QU {
         int pRoot = find(p);
         int qRoot = find(q);
 
-        if (pRoot == qRoot) return;
+        if (pRoot==qRoot) return;
 
-        id[pRoot] = qRoot;
+        id[pRoot]=qRoot;
     }
-}
+
+    }
+
+

@@ -8,8 +8,13 @@
       <sourceFolder url="file://$MODULE_DIR$/LibraryStd" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UnionFind" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Anna" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ExercisesBence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ExercisesH" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Laura" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Laura/UnionFind" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Nicolas" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="stdlib" level="project" />
   </component>
