@@ -47,6 +47,10 @@ public class WeightedQUL {
         int p[] = {4,3,6,9,2,5,7,6,4};
         int q[] = {3,8,5,4,1,0,2,1,8};
 
+//        In in = new In(args[0]);
+//        int[] x = in.readAllInts();
+
+
         StdOut.println("Ich nutze die WeightedQu API");
 
         Stopwatch watch = new Stopwatch();
