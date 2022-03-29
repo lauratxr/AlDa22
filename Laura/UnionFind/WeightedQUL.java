@@ -8,8 +8,8 @@ public class WeightedQUL {
         sz = new int[N];
 
         for (int i = 0; i < N; i++){
-            id[i] = i;
-            sz[i] = 1;
+            id[i] = i;                          //Array
+            sz[i] = 1;                          //Size "Wurzel" bei 1
         }
     }
 
@@ -27,46 +27,44 @@ public class WeightedQUL {
         if (pRoot == qRoot) {
             return;
         }
-        if (sz[pRoot] < sz[qRoot]){
-            id[pRoot] = qRoot;
-            sz[pRoot] += sz[pRoot];
+        if (sz[pRoot] < sz[qRoot]){                 //Wenn Wurzel p kleiner als Wurzel von q
+            id[pRoot] = qRoot;                      //dann Wurzel von p gleich Wurzel von q
+            sz[pRoot] += sz[pRoot];                 //Wurzel von p plus Wurzel von p
         } else {
-            id[qRoot] = pRoot;
-            sz[pRoot] += sz[qRoot];
+            id[qRoot] = pRoot;                      //sonst Wurzel von q gleich Wurzel von p
+            sz[pRoot] += sz[qRoot];                 //Wurzel p plus Wurzel von q
         }
     }
     public boolean connected(int p, int q){
         return find(p) == find(q);
     }
 
-    public static void main(String[] args) {
 
-        int N = 10;
-        WeightedQUL qul = new WeightedQUL(N);
+    public static void main(String[] args){
 
-        int p[] = {4,3,6,9,2,5,7,6,4};
-        int q[] = {3,8,5,4,1,0,2,1,8};
+//        "test1" "test2"
 
-//        In in = new In(args[0]);
-//        int[] x = in.readAllInts();
+        In in = new In(args[0]);
+        int[] x = in.readAllInts();
 
+        In in2 = new In(args[1]);
+        int[] y = in2.readAllInts();
 
-        StdOut.println("Ich nutze die WeightedQu API");
+        Stopwatch time = new Stopwatch();
+        WeightedQUL a = new WeightedQUL(x.length);
 
-        Stopwatch watch = new Stopwatch();
-        watch.elapsedTime();
-
-        for (int i = 0; i < p.length; i++) {
-            if (qul.connected(p[i], q[i])) StdOut.println("Schon verbunden: " + p[i]
-                    + " und " + q[i]);
+        for (int i = 0; i < x.length; i++) {
+            if (a.connected(x[i], y[i])) StdOut.println("Schon verbunden: " + x[i]
+                    + " und " + y[i]);
             else {
-                qul.union(p[i], q[i]);
-                StdOut.println("Jetzt durch Aufruf der Union Methode verbunden " + p[i]
-                        + " und " + q[i]);
+                a.union(x[i], y[i]);
+                StdOut.println("Jetzt durch Aufruf der Union Methode verbunden " + x[i]
+                        + " und " + y[i]);
             }
         }
 
-        StdOut.println(watch.elapsedTime());
+        double watch = time.elapsedTime();
+        StdOut.println("elapsed time = " + watch);
 
     }
 }
