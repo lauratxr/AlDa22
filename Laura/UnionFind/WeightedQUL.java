@@ -44,10 +44,10 @@ public class WeightedQUL {
 
 //        "test1" "test2"
 
-        In in = new In(args[0]);
+        In in = new In(args[2]);
         int[] x = in.readAllInts();
 
-        In in2 = new In(args[1]);
+        In in2 = new In(args[3]);
         int[] y = in2.readAllInts();
 
         Stopwatch time = new Stopwatch();
