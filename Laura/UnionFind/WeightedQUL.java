@@ -65,6 +65,7 @@ public class WeightedQUL {
 
         double watch = time.elapsedTime();
         StdOut.println("elapsed time = " + watch);
+        StdOut.println("test");
 
     }
 }
