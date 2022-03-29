@@ -1,3 +1,5 @@
+package Exercise02;
+
 public class WeightedQU {
 
     private int [] id;
