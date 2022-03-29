@@ -1,8 +1,8 @@
-public class WeightedQU {
+public class WeightedQUB {
     private int[] id;
     private int[] sz;
 
-    public WeightedQU(int N) {
+    public WeightedQUB(int N) {
         id = new int[N];
         sz = new int[N];
 
@@ -36,6 +36,6 @@ public class WeightedQU {
         return find(p)==find(p);}
 
     public static void main(String[] args) {
-        WeightedQU weightedQU = new WeightedQU(10);
+        WeightedQUB weightedQU = new WeightedQUB(10);
     }
 }

@@ -15,8 +15,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Nicolas" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Nicolas/Exercise01" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="stdlib" level="project" />
+    <orderEntry type="library" name="stdlib1" level="project" />
   </component>
 </module>

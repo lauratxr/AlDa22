@@ -1,9 +1,10 @@
-public class WeightedQUL {
+
+public class WeightedQUa {
 
     private int[] id;
     private int[] sz;
 
-    public WeightedQUL(int N){
+    public WeightedQUa(int N){
         id = new int[N];
         sz = new int[N];
 
@@ -42,19 +43,15 @@ public class WeightedQUL {
     public static void main(String[] args) {
 
         int N = 10;
-        WeightedQUL qul = new WeightedQUL(N);
+        WeightedQUa qul = new WeightedQUa(N);
 
         int p[] = {4,3,6,9,2,5,7,6,4};
         int q[] = {3,8,5,4,1,0,2,1,8};
 
-//        In in = new In(args[0]);
-//        int[] x = in.readAllInts();
-
-
         StdOut.println("Ich nutze die WeightedQu API");
 
-        Stopwatch watch = new Stopwatch();
-        watch.elapsedTime();
+        Stopwatch watch1 = new Stopwatch();
+        watch1.elapsedTime();
 
         for (int i = 0; i < p.length; i++) {
             if (qul.connected(p[i], q[i])) StdOut.println("Schon verbunden: " + p[i]
@@ -66,7 +63,8 @@ public class WeightedQUL {
             }
         }
 
-        StdOut.println(watch.elapsedTime());
+        StdOut.println(watch1.elapsedTime());
 
     }
-}
+    }
+
