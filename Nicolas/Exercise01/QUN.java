@@ -1,10 +1,8 @@
-package Exercise01;
-
-public class QuickUnion {
+public class QUN {
 
     private int [] id;
 
-    public QuickUnion(int N){
+    public QUN(int N){
         id = new int[N];
         for (int i = 0; i < N; i++) {
             id[i] = i;

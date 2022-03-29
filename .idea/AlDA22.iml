@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Laura" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Laura/UnionFind" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Nicolas" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Nicolas/Exercise01" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
